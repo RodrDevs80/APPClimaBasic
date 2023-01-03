@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b41e847f24.js" crossorigin="anonymous"></script>
+</head>
+
+<body onload="onLoad()">
+    <div id="particles-js"></div>
+    <h1 class="title">APP CLIMA SERTEC</h1>
+    <a href="https://portfolioweb-sertec.web.app/" target="_blank"><i class="fa-solid fa-circle-user"></i></a>
+    <br>
+    <div id="container">
+
+        <div class="block">
+            <div class="container-location">
+                <h3>Ubicación</h3>
+                <i class="fa-solid fa-city"></i>
+                <div id="location"></div>
+            </div>
+            <div class="container-location">
+                <h3>Fecha</h3>
+                <i class="fa-regular fa-calendar-days"></i>
+                <div id="date"></div>
+            </div>
+            <div class="container-location">
+                <h3>Estado del cielo</h3>
+                <i class="fa-solid fa-cloud"></i><i class="fa-sharp fa-solid fa-sun"></i>
+                <div id="description"></div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="information-container">
+                <h3>Temperatura</h3>
+                <i class="fa-solid fa-temperature-low"></i>
+                <div class="info" id="temperature"></div>
+            </div>
+            <div class="information-container">
+                <h3>Presión</h3>
+                <i class="fa-brands fa-product-hunt"></i>
+                <div class="info" id="pressure"></div>
+            </div>
+            <div class="information-container">
+                <h3>Humedad</h3>
+                <i class="fa fa-droplet"></i>
+                <div class="info" id="humidity"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <div id="loader" class="loader">Loading...</div>
+    <script src="logica.js"></script>
+</body>
+
+</html>
